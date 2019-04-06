@@ -1,18 +1,22 @@
-# PharmaceuticalDrugSpending
+# Pharmaceutical Drug Spending
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+by James Yin
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://pharma-drug-spending.netlify.com
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Deploy to Netlify
+
+- Create an account on Github and Netlify. Push your code using Git to Github.
+- Log in your Netlify account and select the ‘New site from Git’ option.
+- Specify the branch to deploy as master
+- Type `ng build --prod` as the Build command
+- For Publish directory, type: dist/pharmaceutical-drug-spending
+- Click ‘Deploy Site’
+- 'URL' field will be available upon successful deploy
 
 ## Running unit tests
 
@@ -21,8 +25,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# pharmaceutical-drug-spending" 
