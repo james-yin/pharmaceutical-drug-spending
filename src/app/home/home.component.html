@@ -1,0 +1,32 @@
+<ngb-tabset #tabs  (tabChange)="onTabChange($event)">
+  <ngb-tab title="Total Spending" id="tab-total-spending">
+  </ngb-tab>
+  <ngb-tab title="Spending per Capita" id="tab-spending-per-capita">
+  </ngb-tab>
+  <ngb-tab title="Spending by Country" id="tab-spending-by-country">
+  </ngb-tab>
+</ngb-tabset>
+
+<div *ngIf="pharmaArr" [ngSwitch]="currentTabId">
+  <app-total-spending *ngSwitchCase="'tab-total-spending'" [pharmaArr]="pharmaArr"></app-total-spending>
+  <app-spending-per-capita *ngSwitchCase="'tab-spending-per-capita'" [pharmaArr]="pharmaArr"></app-spending-per-capita>
+  <app-spending-by-country *ngSwitchCase="'tab-spending-by-country'" [pharmaArr]="pharmaArr"></app-spending-by-country>
+</div>
+
+<!-- <ngb-tabset #tabs *ngIf="pharmaArr">
+    <ngb-tab title="Total Spending" id="tab-total-spending">
+      <ng-template ngbTabContent>
+        <app-total-spending [pharmaArr]="pharmaArr"></app-total-spending>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Spending per Capita" id="tab-spending-per-capita">
+      <ng-template ngbTabContent>
+        <app-spending-per-capita [pharmaArr]="pharmaArr"></app-spending-per-capita>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Spending by Country" id="tab-spending-by-country">
+      <ng-template ngbTabContent>
+          <app-spending-by-country [pharmaArr]="pharmaArr"></app-spending-by-country>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset> -->
